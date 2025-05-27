@@ -1,0 +1,106 @@
+/* Dark Mode Overrides */
+:root.dark, .dark {
+  --bg-color: #121212;
+  --text-color: #ddd;
+  --header-bg: #1f1f1f;
+  --footer-bg: #1f1f1f;
+  --card-bg: #2c2c2c;
+  --button-bg: #007bff;
+  --button-hover-bg: #0056b3;
+  --danger-color: #dc3545;
+  --danger-hover: #a71d2a;
+}
+.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-color: #1e1e1e;
+  --border-color: #333;
+}
+
+.dark body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.dark .product-card,
+.dark .header,
+.dark .footer {
+  background-color: var(--card-color);
+  border-color: var(--border-color);
+}
+
+
+body.dark, .dark body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+.header.dark, .dark .header {
+  background-color: var(--header-bg);
+  box-shadow: none;
+}
+
+.footer.dark, .dark .footer {
+  background-color: var(--footer-bg);
+  color: var(--text-color);
+}
+
+.product-card.dark, .dark .product-card {
+  background-color: var(--card-bg);
+  box-shadow: none;
+  color: var(--text-color);
+}
+
+.actions button, .dark .actions button {
+  background-color: var(--button-bg);
+  color: white;
+}
+
+.actions button:hover, .dark .actions button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.wishlist-btn.active.dark, .dark .wishlist-btn.active {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+  color: white;
+}
+
+.wishlist-btn.dark, .dark .wishlist-btn {
+  border-color: var(--button-bg);
+  color: var(--button-bg);
+}
+
+.wishlist-btn:hover, .dark .wishlist-btn:hover {
+  opacity: 0.8;
+}
+
+.product-details section.dark, .dark .product-details section {
+  color: var(--text-color);
+}
+
+.cart-table.dark, .dark .cart-table {
+  color: var(--text-color);
+  border-color: var(--card-bg);
+}
+
+.cart-table button, .dark .cart-table button {
+  background-color: var(--danger-color);
+}
+
+.cart-table button:hover, .dark .cart-table button:hover {
+  background-color: var(--danger-hover);
+}
+
+.wishlist-list li.dark, .dark .wishlist-list li {
+  color: var(--text-color);
+}
+
+.wishlist-list button.dark, .dark .wishlist-list button {
+  background-color: var(--danger-color);
+}
+
+.wishlist-list button:hover, .dark .wishlist-list button:hover {
+  background-color: var(--danger-hover);
+}
