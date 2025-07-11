@@ -16,10 +16,14 @@ export default function DarkModeToggle() {
     }
   }, [isDark]);
 
-  return (
-    <button onClick={() => setIsDark(prev => !prev)} className="dark-toggle-btn">
-      {isDark ? "Dark Mode " : " Light Mode"}
-    </button>
-  );
+ return (
+  <button
+    onClick={() => setIsDark(prev => !prev)}
+    className="dark-toggle-btn"
+    aria-label="Toggle dark mode"
+    title="Toggle dark mode"
+  >
+    {isDark ? "Dark Mode" : "Light Mode"}
+  </button>
+);
 }
-gmail
