@@ -18,7 +18,8 @@ export default function DarkModeToggle() {
 
   return (
     <button onClick={() => setIsDark(prev => !prev)} className="dark-toggle-btn">
-      {isDark ? "🌙 Dark Mode On" : "☀️ Light Mode Off"}
+      {isDark ? "Dark Mode " : " Light Mode"}
     </button>
   );
 }
+gmail
